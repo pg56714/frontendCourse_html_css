@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        color: white;
+    }
+    p {
+        display: none;
+    }
+    @media screen and (max-width: 512px) {
+        /*當瀏覽器視窗寬度小於等於768px 的時候，套用以下設定*/
+        body {background-color: red;}
+        p.mobile {display: block;}
+        }
+    @media screen and (min-width: 513px) and (max-width: 768px) {
+    /*當瀏覽器視窗寬度介於 513px 與 768px 之間的時候，套用以下設定*/
+        body { background-color: green;}
+        p.tablet { display: block;}
+    }
+    @media screen and (min-width: 769px) {
+    /*當瀏覽器視窗寬度大於等於769px 的時候，套用以下設定*/
+        body { background-color: blue;}
+        p.computer { display: block;}
+    }
+</style>
+</head>
+<body>
+    <p class="mobile">我是手機版畫面</p>
+    <p class="tablet">我是平板電腦版畫面</p>
+    <p class="computer">我是電腦版畫面</p>
+
+</body>
+</html>

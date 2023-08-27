@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用 CSS 做出來的型狀</title>
+    <style>
+      .half-circle {
+        width: 100px;
+        height: 50px;
+        background-color: lightcoral;
+        border-radius: 0px 0px 50px 50px;
+      }
+      .triangle {
+        width: 0;
+        height: 0;
+        border-top: 0px solid blue;
+        border-right: 50px solid transparent;
+        border-bottom: 80px solid green;
+        border-left: 50px solid transparent;
+      }
+      .tooltip {
+        width: 120px;
+        height: 30px;
+        background-color: lightgray;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 30px;
+        position: relative;
+      }
+      .tooltip::after {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 10px solid lightgray;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .clippath {
+        width: 100px;
+        height: 100px;
+        background-color: cadetblue;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>用 CSS 做出來的型狀</h1>
+    <h2>半圓形</h2>
+    <div class="half-circle"></div>
+    <h2>三角形</h2>
+    <div class="triangle"></div>
+    <h2>提示工具</h2>
+    <div class="tooltip">我是提示！</div>
+    <h2>clip-path</h2>
+    <div class="clippath"></div>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      div.one {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: move; /*動態的名稱*/
+        animation-duration: 2s; /*移動的時間長*/
+        animation-timing-function: ease-in-out; /*移動的節奏*/
+        animation-iteration-count: infinite; /*移動的次數*/
+        animation-direction: normal; /*移動的方向*/
+        animation-play-state: running;
+        display: none;
+      }
+      @keyframes move {
+        0% {
+          transform: translate(0px);
+        }
+        25% {
+          transform: translate(200px, 0px);
+          border-radius: 50%;
+        }
+        50% {
+          transform: translate(200px, 200px);
+          border-radius: 50%;
+          background-color: blue;
+        }
+        75% {
+          transform: translate(0px, 200px);
+          background-color: yellow;
+        }
+        100% {
+          transform: translate(0px);
+        }
+      }
+
+      div.mario {
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        transform: scaleX(-1); /*翻面*/
+        animation-name: bounce;
+        animation-duration: 0.5s; /*移動的時間長*/
+        animation-timing-function: cubic-bezier(
+          0.18,
+          0.26,
+          0,
+          0.98
+        ); /*移動的節奏*/
+        animation-iteration-count: infinite; /*移動的次數*/
+        animation-direction: alternate; /*移動的方向*/
+      }
+      div.mario img {
+        width: 100%;
+      }
+      @keyframes bounce {
+        0% {
+          transform: scaleX(-1) translateY(0);
+        }
+        100% {
+          transform: scaleX(-1) translateY(-100px);
+        }
+      }
+      div.shadow {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 260px;
+        left: 210px;
+        border-radius: 40px;
+        background-color: black;
+        animation-name: shadow;
+        animation-duration: 0.5s; /*移動的時間長*/
+        animation-timing-function: cubic-bezier(
+          0.18,
+          0.26,
+          0,
+          0.98
+        ); /*移動的節奏*/
+        animation-iteration-count: infinite; /*移動的次數*/
+        animation-direction: alternate; /*移動的方向*/
+      }
+      @keyframes shadow {
+        0% {
+          transform: scale(1, 0.2);
+          opacity: 40%;
+        }
+        100% {
+          transform: scale(0.5, 0.2);
+          opacity: 10%;
+        }
+      }
+      div.star {
+        width: 50px;
+        position: absolute;
+        top: 60px;
+        left: 225px;
+        animation-name: star;
+        animation-duration: 0.5s; /*移動的時間長*/
+        animation-timing-function: cubic-bezier(
+          0.18,
+          0.26,
+          0,
+          0.98
+        ); /*移動的節奏*/
+        animation-iteration-count: infinite; /*移動的次數*/
+        animation-direction: alternate; /*移動的方向*/
+      }
+      div.star img {
+        width: 100%;
+      }
+      @keyframes star {
+        0% {
+          transform: scaleX(1);
+        }
+        100% {
+          transform: scaleX(-1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+    <div class="one"></div>
+    <div class="mario"><img src="section-01-character02.png" alt="" /></div>
+    <div class="shadow"></div>
+    <div class="star"><img src="star.png" alt="" /></div>
+  </body>
+</html>

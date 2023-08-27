@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Layout</title>
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+    }
+    section {
+        border: 10px solid cornflowerblue;
+        height: 90vh; background: lightgreen;
+        display: flex;
+        flex-direction: row;/*控制直排橫排*/
+        flex-wrap: nowrap;/*控制折行*/
+        align-items: center;/*處理上下對齊*/
+        justify-content: center;/*處理水平對齊*/
+        gap: 10px;/*間格距離*/
+    }
+    div {
+        flex-grow: 1; /*伸展值*/
+        flex-shrink: 0; /*收縮值*/
+        flex-basis: 80px; /*基礎(寬度)大小*/
+        border: 5px solid darkblue;
+        font-size: 30px;
+        color:dodgerblue;
+        background: white;
+        display: flex;
+        align-items: center;/*處理上下對齊*/
+        justify-content: center;/*處理左右對齊*/
+    }
+ div:nth-of-type(1) {
+   order: 4; /*排序*/
+   align-self: start;/*個別對齊*/
+ }
+ div:nth-of-type(2) {
+    order: 2; /*排序*/
+    align-self: flex-end;/*個別對齊*/
+  }
+  div:nth-of-type(3) {
+    order: 3; /*排序*/
+  }
+  div:nth-of-type(4) {
+    order: 1; /*排序*/
+  }
+</style>
+</head>
+<body>
+  <section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </section>  
+</body>
+</html>

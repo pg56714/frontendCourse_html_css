@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>關於陰影的五四三</title>
+    <style>
+      /* :root {
+      } */
+      body {
+        font-family: sans-serif;
+        line-height: 180%;
+      }
+      div.shadow {
+        --shadow01: rgb(127, 118, 185);
+        width: 100px;
+        height: 100px;
+        background-color: var(--shadow01);
+        border-radius: 50%;
+        box-shadow: inset 40px 0 0 0 darkblue, inset 0px 40px 0 0 darkred,
+          110px 0px 0px 0px var(--shadow01), 220px 0px 0px 0px var(--shadow01),
+          330px 0px 0px 0px var(--shadow01), 440px 0px 0px 0px var(--shadow01);
+      }
+      strong {
+        box-shadow: inset 0 1rem 0 0 rgb(37, 249, 55);
+      }
+
+      div.heart {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border: 5px solid black;
+        position: relative;
+      }
+      div.heart::before,
+      div.heart::after {
+        content: " ";
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        position: absolute;
+      }
+      div.heart::before {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      div.heart::after {
+        border-radius: 50%;
+        top: 26px;
+        left: 25px;
+        box-shadow: 19px 0 0 0 red;
+      }
+      h2::after {
+        content: "😂";
+      }
+
+      div.bgshadow {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border: 5px solid black;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+      div.bgshadow::before,
+      div.bgshadow::after {
+        content: " ";
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 30px;
+        position: absolute;
+        z-index: -1; /*把陰影移到後面*/
+        filter: blur(10px); /*讓它興奮到模糊*/
+        top: 20px;
+      }
+      div.bgshadow::before {
+        left: -25px;
+        background-color: rgb(99, 113, 232);
+      }
+      div.bgshadow::after {
+        right: -25px;
+        background-color: rgb(244, 240, 118);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>影之分身術</h2>
+    <p>利用陰影可以複製出無限多個相同色塊，而且不會占用到實體空間。</p>
+    <div class="shadow"></div>
+    <h2>影之筆記本</h2>
+    <p>利用陰影也可以快速製作出螢光筆的效果來畫重點。</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio
+      omnis sunt officia explicabo minus quod eos,
+      <strong> unde labore incidunt soluta non fugiat</strong>. Dolorum sit
+      provident consectetur itaque quos quod.
+    </p>
+
+    <h2>Pseudo Element 偽元素</h2>
+    <p>
+      偽元素是在區塊的前後製造出空的虛擬元素區塊，通常用來在不影響到內容的前提下，設計出一些裝飾性的視覺效果。
+    </p>
+    <h3>虛擬愛心</h3>
+    <div class="heart"></div>
+    <h3>虛擬陰影？？？</h3>
+    <div class="bgshadow"></div>
+  </body>
+</html>

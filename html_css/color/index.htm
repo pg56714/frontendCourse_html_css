@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Setting Example</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+      :root {
+        --light-color: hsl(324, 100%, 80%);
+        --main-color: hsl(324, 100%, 27%);
+        --sub-color: hsl(324, 100%, 50%);
+        --dark-color: hsl(324, 100%, 10%);
+        --neutral-light-color: hsl(324, 10%, 90%);
+        --neutral-dark-color: hsl(324, 10%, 27%);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: var(--light-color);
+        font-family: "Roboto Slab", sans-serif;
+      }
+      div {
+        width: 300px;
+        background-color: var(--neutral-light-color);
+        padding: 20px;
+
+        box-shadow: 12px 0px 0px 0px var(--main-color),
+          24px 0px 0px 0px var(--sub-color), 36px 0px 0px 0px var(--main-color),
+          48px 0px 0px 0px var(--sub-color), 60px 0px 0px 0px var(--main-color),
+          72px 0px 0px 0px var(--sub-color);
+      }
+      h1 {
+        color: var(--main-color);
+      }
+      h3 {
+        color: var(--main-color);
+      }
+      p {
+        color: var(--neutral-dark-color);
+      }
+      img {
+        width: 100%;
+      }
+      button {
+        color: white;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+        background: var(--main-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>關於顏色的設定</h1>
+    <div>
+      <h3>Lorem ipsum dolor sit amet</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+        asperiores ipsum rem saepe
+      </p>
+      <img src="./mos-design-TFfHBn-Ene0-unsplash.jpg" alt="" />
+      <button>Lorem ipsum dolor</button>
+    </div>
+    <h3>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+      asperiores ipsum rem saepe nisi possimus et aspernatur reprehenderit
+      reiciendis officia fugiat, aliquid soluta laudantium, inventore fugit fuga
+      facilis voluptas hic!
+    </h3>
+  </body>
+</html>
