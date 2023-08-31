@@ -1,0 +1,25 @@
+.wrap{
+    width: 500px;
+    background: #000;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.header{
+    height: 50px;
+    background:red;
+   
+}
+.content{
+    background: blue;
+    padding: 20px;
+}
+.content p{
+    color: white;
+    margin-bottom: 30px;
+}
+.footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background: pink;
+}

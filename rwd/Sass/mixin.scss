@@ -1,0 +1,22 @@
+@mixin hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.header h1 {
+  background: #000;
+  @include hide-text;
+}
+
+@mixin circle($size, $bgColor) {
+  border-radius: 50%;
+  height: $size;
+  width: $size;
+  font-size: $size/3;
+  background: $bgColor;
+}
+
+.box {
+  @include circle(40px, #ccc);
+}

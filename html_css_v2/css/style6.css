@@ -1,0 +1,7 @@
+.box{
+    width: 280px;
+    height: 180px;
+    background-image: url(../img/logo.png);
+    /*水平重複*/
+    background-repeat: repeat-x;
+}

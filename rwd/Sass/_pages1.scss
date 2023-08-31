@@ -1,0 +1,17 @@
+.header {
+  width: 100px;
+  height: 100px;
+  @include pad() {
+    height: auto;
+  }
+
+  @include iphone() {
+    height: 30px;
+  }
+  a {
+    color: $test;
+    @include iphone() {
+      display: none;
+    }
+  }
+}

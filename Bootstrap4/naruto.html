@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo {
+        padding: 10px;
+        border: dashed 1px #fd7e14;
+        position: relative;
+      }
+
+      .d0922 {
+        text-align: center;
+      }
+
+      .d0922 .naruto {
+        display: inline-block;
+        background-image: url("https://www.casper.tw/images/naruto.png");
+        height: 404px;
+        width: 156px;
+        position: relative;
+        z-index: 3;
+      }
+      .d0922 .naruto:after,
+      .d0922 .naruto:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -15px;
+        opacity: 0;
+        -webkit-transition: all, 0.5s;
+        -moz-transition: all, 0.5s;
+        -o-transition: all, 0.5s;
+        transition: all, 0.5s;
+      }
+      .d0922 .naruto:after {
+        height: 414px;
+        width: 214px;
+        left: 0;
+        background-image: url("https://www.casper.tw/images/narutoR.png");
+      }
+      .d0922 .naruto:before {
+        height: 413px;
+        width: 231px;
+        right: 0;
+        background-image: url("https://www.casper.tw/images/narutoL.png");
+      }
+      .d0922 .naruto:hover:after {
+        opacity: 1;
+        left: 150px;
+      }
+      .d0922 .naruto:hover:before {
+        opacity: 1;
+        right: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo d0922" data-demo="Hover me">
+      <div class="naruto"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+先確認media query的設定 
+
+先針對熱門的在用冷門的
+max_width768
+
+max_width568
+
+max_width767 and min_width569
+
+media 到底要全部寫在一起還是隔離 --> 一組一組寫比較好，ex：menu寫在一起
+
+請不要習慣寫死高度

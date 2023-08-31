@@ -1,0 +1,11 @@
+.box{
+    margin-left: 30px;
+    border: 5px solid blue;
+    width: 200px;
+    /*產生留白距離*/
+    padding: 30px;
+}
+
+.box p{
+    margin-bottom: 10px;
+}

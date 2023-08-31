@@ -1,0 +1,72 @@
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    padding: 50px;
+    border: 10px solid black;
+    /*margin-bottom: 30px;*/
+    margin: 30px;
+}
+/*
+全部標籤都吃到
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+*/
+*/
+.box1{
+    width: 50px;
+    height: 50px;
+    border: 10px solid blue;
+    padding: 10px;
+    background: #000;
+    /*全部依照width an heigh長寬計算，不管其他的*/
+    box-sizing: border-box;
+}
+.box2{
+    width: 50px;
+    height: 50px;
+    border: 10px solid blue;
+    padding: 10px;
+    background: #000;
+}
+
+/*絕對定位*/
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.header{
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+    /*相對定位*/
+    position: relative;
+}
+
+.header .box4{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header .box5{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    z-index: 2;
+
+}

@@ -1,0 +1,36 @@
+/*標籤選擇器*/
+h1{
+    /*border: 1px solid blue;*/
+    border-left: 1px solid red;
+    border-bottom: 1px solid blue;
+    color: blue;
+    font-size: 26px;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    /*行距*/
+    line-height: 1.5;
+    text-align: left;
+    /*縮排*/
+    text-indent: 20px;
+    display:inline-block;
+    /*刪除線或底線*/
+    text-decoration: line-through;
+}
+
+/*擬態選擇器*/
+/*hover、active常用在a*/
+a:hover{
+    color: red;
+}
+/*按住*/
+a:active{
+    color: green;
+}
+
+/*類別選擇器*/
+.style1{
+    color: blue;
+}

@@ -1,0 +1,29 @@
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin iphone {
+  @media (max-width: 568px) {
+    @content;
+  }
+}
+
+.header {
+  width: 100px;
+  height: 100px;
+  @include pad() {
+    height: auto;
+  }
+
+  @include iphone() {
+    height: 30px;
+  }
+  a {
+    color: #000;
+    @include iphone() {
+      display: none;
+    }
+  }
+}

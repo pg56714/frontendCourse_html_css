@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        max-width: 500px;
+        margin: 0 auto;
+        height: 200px;
+        background: #000;
+      }
+      .menu {
+        width: 30%;
+        height: 100px;
+        background: orange;
+        float: left;
+      }
+      .content {
+        width: 70%;
+        height: 100px;
+        background: green;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!--%是抓父元素的大小作運算，EX：warp500px，menu就是500的3%-->
+    <div class="wrap">
+      <div class="menu"></div>
+      <div class="content"></div>
+    </div>
+  </body>
+</html>

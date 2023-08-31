@@ -1,0 +1,14 @@
+.price th,.price td{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.price th{
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+
+.price td{
+    padding: 10px;
+}

@@ -1,0 +1,14 @@
+.header h1 {
+  background: #000;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.box {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: 13.3333333333px;
+  background: #ccc;
+}/*# sourceMappingURL=mixin.css.map */

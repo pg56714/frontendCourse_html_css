@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style8.css" />
+  </head>
+  <body>
+    <form action="test10.html">
+      <!--點label就可以定位到輸入欄位-->
+      <!--name用來命名值的變數名稱、value用來傳值、id命名-->
+      <label for="mail">電子郵件：</label>
+      <input id="mail" type="text" name="mail" placeholder="請輸入電子郵件" />
+      <br />
+      <label for="name">姓名：</label>
+      <input id="name" type="text" name="name" placeholder="請輸入姓名" />
+      <br />
+      <h2>性別</h2>
+      <input type="radio" name="sex" id="sex_male" value="male" />
+      <label for="sex_male">男生</label>
+      <input type="radio" name="sex" id="sex_women" value="women" />
+      <label for="sex_women">女生</label>
+      <br />
+      <h2>興趣</h2>
+      <input type="checkbox" name="hobby" id="movie" value="movie" />
+      <label for="movie">看電影</label>
+      <input type="checkbox" name="hobby" id="music" value="music" />
+      <label for="music">聽音樂</label>
+      <br />
+      <label for="birth">生日：</label>
+      <select name="birth" id="birth">
+        <option value="1900">1900</option>
+        <option value="1901">1901</option>
+      </select>
+      <br />
+      <h2>內容：</h2>
+      <textarea name="content" id="content" cols="30" rows="10"></textarea>
+      <br />
+      <input type="submit" value="下一步" />
+    </form>
+  </body>
+</html>

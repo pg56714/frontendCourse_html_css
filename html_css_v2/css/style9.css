@@ -1,0 +1,32 @@
+/*圓弧效果*/
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    /*border-radius: 50%;*/
+    border-radius: 50px 0 50px 0;
+    border: 10px solid blue;
+    text-align: center;
+    color: #fff;
+    line-height: 150px;
+}
+
+/*漸層效果*/
+.box1{
+    width: 1000px;
+    height: 300px;
+    /*background: linear-gradient(#000, #fff);*/
+    background: -webkit-linear-gradient(left,#000, #fff);
+}
+
+/*陰影效果*/
+.box2{
+    width: 200px;
+    height: 200px;
+    background: green;
+    box-shadow: 10px 10px 10px pink;
+}
+
+#test{
+   color: red;
+}
